@@ -121,3 +121,11 @@
     content: "F";
     right: 0;
   }
+
+  sup {
+      font-size: 15px;
+      color: white;
+      background-color: rgb(190, 63, 16);
+      padding: 3px;
+      border-radius: 7px;
+  }

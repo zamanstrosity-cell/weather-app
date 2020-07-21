@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { BsCompass, BsDroplet } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { FiWind, FiCloud } from 'react-icons/fi';
+import { FiWind } from 'react-icons/fi';
 import './component-styles/card.css';
 
 export class Card extends Component {
@@ -16,7 +16,7 @@ export class Card extends Component {
             flexDirection: "column",
             alignItems: "center",
             padding: "20px",
-            backgroundImage : this.props.bgColor
+            backgroundColor: "#8EC5FC"
         
         }
         return (
@@ -30,9 +30,10 @@ export class Card extends Component {
                         </label>
                     </div>
                 </div>
-                <h1 className="city">{this.props.city}</h1>
+                <h1 className="city">{this.props.city}<sup>{this.props.country}</sup></h1>
                 <div className="weather-info">
-                    <div className="weather-icon" style={{ fontSize: '120px' }}><FiCloud /></div>
+                    <div className="weather-icon"><img className="icon-image" src={this.props.imgSrc} alt="Logo"/>
+              </div>
                     <div className="temperature" style={{ fontSize: '30px' }}>{this.props.temp}&#176;{this.props.celsius ? "C" : "F"}</div>
                 </div>
                 <div className="extra-info">
