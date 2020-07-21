@@ -11,6 +11,10 @@
 
 }
  */
+
+#search {
+    cursor: pointer;
+}
 .city {
     height: 10%;
     width: 90%;
